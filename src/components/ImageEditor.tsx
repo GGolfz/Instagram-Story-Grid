@@ -144,10 +144,6 @@ export default function ImageEditor({ image, onSave, onClose }: ImageEditorProps
     }
   };
 
-  const handleZoomChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setZoom(Number(e.target.value));
-  };
-
   const handleSave = () => {
     onSave({ zoom, panX, panY });
     onClose();
